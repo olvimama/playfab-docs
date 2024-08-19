@@ -1,40 +1,46 @@
 ---
-title: Azure Active Directory for PlayFab
+title: Microsoft Accounts Authentication for PlayFab
 author: joannaleecy
-description: Provides an introduction to Azure Active Directory (AAD) authentication and steps for how to create a user with this auth method
+description: Provides an introduction to Microsoft Account authentication and steps for how to create a user with this auth method
 ms.author: joanlee
 ms.date: 11/11/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, analytics, metrics, webhooks, events
 ms.localizationpriority: medium
 ---
 
-# Azure Active Directory Authentication for Playfab Game Manager
+# Account Authentication for PlayFab Game Manager
+> [!NOTE]
+> All **New** PlayFab user accounts after July 27th 2024 must use a Microsoft authentication service.
 
-PlayFab now supports two methods of user authentication. The first is the original PlayFab user authentication system. The second is Azure Active Directory (Azure AD).
+PlayFab supports two methods for user authentication. The first is the original PlayFab user authentication system. The second and recommended is Microsoft's authentication services - Microsoft Account and Microsoft Entra ID (formerly known as Azure Active Directory). 
 
-### To create a new Azure AD user
+### Sign-up with a Microsoft Authenticated Account
+
+You can create a new PlayFab account using an existing or new Microsoft Account. The PlayFab authentication system is no longer available for new accounts.
+
+1. Navigate to [PlayFab's Signup page](https://developer.playfab.com/en-US/sign-up).
+2. Select **Sign up with Microsoft** and follow the signup flow.
+
+    ![Sign up with Microsoft](media/aad-sign-up.png)
+
+### To create a new Microsoft Authenticated user
 
 1. Navigate to your studio's users section.
 
     ![Studio Users](media/AADDoc1.png)
 
-2. Select **Add User** and select **Microsoft** as the authentication provider.
+2. Select **Add User** in the top right 
 
-    ![Select Microsoft Authentication](media/AADDoc2.png)
+3. Add the required details and configurations including selecting **Microsoft** as the authentication provider.
 
-3. Assign roles as normal and send an invite. The user has the option to sign in via a Microsoft account.
+    ![Select Microsoft Authentication](media/aad-new-user.png)
 
-    ![Sign in with Microsoft](media/AADDoc3.png )
+3. Select **Add user** when done to send an invite to the user. The user then registers via a Microsoft Account.
 
-### Sign-up with Azure AD
+    ![Sign in with Microsoft](media/aad-auth-log-in.png)
 
-You can start a new PlayFab studio via Azure AD.
+### Microsoft Account Limitations
 
-1. Navigate to [developer.microsoft.com](https://developer.playfab.com/en-US/sign-up).
-2. Select **Sign in with Microsoft**.
-
-### Azure AD Limitations
-
-Azure AD authentication is functional for individual users, including Azure AD token exchange for programmatic authentication. It doesn't support groups or graph.
+Microsoft Account authentication is functional for individual users, including Microsoft Account token exchange for programmatic authentication. It doesn't support groups or graph.

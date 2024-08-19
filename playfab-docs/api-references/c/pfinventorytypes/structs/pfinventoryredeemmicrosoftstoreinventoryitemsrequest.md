@@ -4,8 +4,8 @@ title: "PFInventoryRedeemMicrosoftStoreInventoryItemsRequest"
 description: "PFInventoryRedeemMicrosoftStoreInventoryItemsRequest data model. Redeem items from the Microsoft Store."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 05/24/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFInventoryRedeemMicrosoftStoreInventoryItemsRequest  
@@ -59,7 +59,7 @@ TBD
 **`xboxToken`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) Xbox Token used for delegated business partner authentication.
+(Optional) Xbox Token used for delegated business partner authentication. Token provided by the Xbox Live SDK method GetTokenAndSignatureAsync("POST", "https://playfabapi.com/", "").
   
   
 ## Requirements  

@@ -4,8 +4,8 @@ title: "PFPlayerDataManagementClientUpdateUserPublisherDataAsync"
 description: "Creates and updates the publisher-specific custom data for the user which is readable and writable by the client"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 06/20/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFPlayerDataManagementClientUpdateUserPublisherDataAsync  

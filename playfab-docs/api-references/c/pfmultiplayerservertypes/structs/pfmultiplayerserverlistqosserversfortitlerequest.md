@@ -4,8 +4,8 @@ title: "PFMultiplayerServerListQosServersForTitleRequest"
 description: "PFMultiplayerServerListQosServersForTitleRequest data model. Returns a list of quality of service servers for a title."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 05/24/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFMultiplayerServerListQosServersForTitleRequest  
@@ -19,6 +19,7 @@ typedef struct PFMultiplayerServerListQosServersForTitleRequest {
     PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
     bool const* includeAllRegions;  
+    const char* routingPreference;  
 } PFMultiplayerServerListQosServersForTitleRequest;  
 ```
   
@@ -37,6 +38,11 @@ Count of customTags
 *may be nullptr*  
   
 (Optional) Indicates that the response should contain Qos servers for all regions, including those where there are no builds deployed for the title.
+  
+**`routingPreference`** &nbsp; const char*  
+*is null-terminated*  
+  
+(Optional) Indicates the Routing Preference used by the Qos servers. The default Routing Preference is Microsoft.
   
   
 ## Requirements  

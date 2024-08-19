@@ -4,8 +4,8 @@ title: "PFGroupsAcceptGroupApplicationRequest"
 description: "PFGroupsAcceptGroupApplicationRequest data model. Accepts an outstanding invitation to to join a group if the invited entity is not blocked by the group. Nothing is returned in the case of success."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 05/24/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFGroupsAcceptGroupApplicationRequest  

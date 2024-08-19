@@ -4,8 +4,8 @@ title: "PFHCGetLibVersion"
 description: "Returns the version of the library."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 03/09/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFHCGetLibVersion  

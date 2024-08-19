@@ -4,8 +4,8 @@ title: "PFCloudScriptServerExecuteCloudScriptAsync"
 description: "Executes a CloudScript function, with the 'currentPlayerId' set to the PlayFab ID of the authenticated player. The PlayFab ID is the entity ID of the player's master_player_account entity."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 09/25/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFCloudScriptServerExecuteCloudScriptAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32. When the asynchronous task is complete, call [PFCloudScriptServerExecuteCloudScriptGetResultSize](pfcloudscriptserverexecutecloudscriptgetresultsize.md) and [PFCloudScriptServerExecuteCloudScriptGetResult](pfcloudscriptserverexecutecloudscriptgetresult.md) to get the result.
+This API is available on Win32, Linux, and macOS. When the asynchronous task is complete, call [PFCloudScriptServerExecuteCloudScriptGetResultSize](pfcloudscriptserverexecutecloudscriptgetresultsize.md) and [PFCloudScriptServerExecuteCloudScriptGetResult](pfcloudscriptserverexecutecloudscriptgetresult.md) to get the result.
   
 ## Requirements  
   

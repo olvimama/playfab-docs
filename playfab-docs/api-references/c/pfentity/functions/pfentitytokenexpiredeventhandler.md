@@ -4,8 +4,8 @@ title: "PFEntityTokenExpiredEventHandler"
 description: "EntityToken expired event handler. Needed to reauthenticate players in scenarios where the SDK is unable to automatically refresh the cached EntityToken."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 03/09/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFEntityTokenExpiredEventHandler  

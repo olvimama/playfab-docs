@@ -4,8 +4,8 @@ title: "PFEventPipelineAddUploadingEntity"
 description: "Adds an entity to an existing pipeline. All events emitted will be linked to this entity."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 05/24/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFEventPipelineAddUploadingEntity  

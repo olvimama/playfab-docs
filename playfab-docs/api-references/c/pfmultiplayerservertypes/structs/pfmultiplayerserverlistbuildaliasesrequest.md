@@ -4,8 +4,8 @@ title: "PFMultiplayerServerListBuildAliasesRequest"
 description: "PFMultiplayerServerListBuildAliasesRequest data model. Returns a list of summarized details of all multiplayer server builds for a title."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 05/24/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFMultiplayerServerListBuildAliasesRequest  

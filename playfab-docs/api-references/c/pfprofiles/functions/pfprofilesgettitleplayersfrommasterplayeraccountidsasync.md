@@ -4,8 +4,8 @@ title: "PFProfilesGetTitlePlayersFromMasterPlayerAccountIdsAsync"
 description: "Retrieves the title player accounts associated with the given master player account."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 06/20/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFProfilesGetTitlePlayersFromMasterPlayerAccountIdsAsync  

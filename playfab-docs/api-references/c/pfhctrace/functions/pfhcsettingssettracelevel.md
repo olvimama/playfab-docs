@@ -4,8 +4,8 @@ title: "PFHCSettingsSetTraceLevel"
 description: "Sets the trace level for the library. Traces are sent the debug output."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 03/09/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFHCSettingsSetTraceLevel  

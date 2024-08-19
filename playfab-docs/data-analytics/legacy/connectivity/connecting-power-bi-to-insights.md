@@ -5,7 +5,7 @@ description: Guide to connecting Power BI with Insights.
 ms.author: norie
 ms.date: 03/20/2020    
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, insights
 ms.localizationpriority: medium
 ---
@@ -13,6 +13,9 @@ ms.localizationpriority: medium
 # Tutorial: Connecting Power BI to Insights
 
 This guide helps you get started using Power BI along with Insights. After connecting, you can use Power BI to create visualizations of your game data and more. To learn more about other tools you can connect Insights with, see [Connecting external tools to Insights](index.md).
+
+> [!NOTE]
+> PlayFab Insights Management was deprecated on December 11th, 2023. We recommend using [Azure Data Explorer (ADX) Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Insights**, continue to see this article for implementation details. For more information, see [Insights Deprecation Blog](https://developer.microsoft.com/en-us/games/articles/2023/09/playfab-insights-management-to-be-deprecated-starting-december-11/).
 
 ## Prerequisites
 

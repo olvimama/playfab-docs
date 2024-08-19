@@ -4,8 +4,8 @@ title: "PFAccountManagementServerUpdateBansAsync"
 description: "Updates information of a list of existing bans specified with Ban Ids."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 09/25/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFAccountManagementServerUpdateBansAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32. For each ban, only updates the values that are set. Leave any value to null for no change. If a ban could not be found, the rest are still applied. Returns information about applied updates only. See also ServerBanUsersAsync, ServerGetUserBansAsync, ServerRevokeAllBansForUserAsync, ServerRevokeBansAsync. When the asynchronous task is complete, call [PFAccountManagementServerUpdateBansGetResultSize](pfaccountmanagementserverupdatebansgetresultsize.md) and [PFAccountManagementServerUpdateBansGetResult](pfaccountmanagementserverupdatebansgetresult.md) to get the result.
+This API is available on Win32, Linux, and macOS. For each ban, only updates the values that are set. Leave any value to null for no change. If a ban could not be found, the rest are still applied. Returns information about applied updates only. See also ServerBanUsersAsync, ServerGetUserBansAsync, ServerRevokeAllBansForUserAsync, ServerRevokeBansAsync. When the asynchronous task is complete, call [PFAccountManagementServerUpdateBansGetResultSize](pfaccountmanagementserverupdatebansgetresultsize.md) and [PFAccountManagementServerUpdateBansGetResult](pfaccountmanagementserverupdatebansgetresult.md) to get the result.
   
 ## Requirements  
   

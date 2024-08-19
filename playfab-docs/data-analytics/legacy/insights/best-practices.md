@@ -5,7 +5,7 @@ description: PlayFab Insights best practices and FAQs
 ms.author: joanlee
 ms.date: 02/28/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, insights
 ms.localizationpriority: medium
 ---
@@ -13,6 +13,9 @@ ms.localizationpriority: medium
 # Best Practices and FAQ
 
 Here we examine some best practices for using PlayFab Insights and address the most frequently asked questions.
+
+> [!NOTE]
+> PlayFab Insights Management was deprecated on December 11th, 2023. We recommend using [Azure Data Explorer (ADX) Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Insights**, continue to see this article for best practice details. For more information, see [Insights Deprecation Blog](https://developer.microsoft.com/en-us/games/articles/2023/09/playfab-insights-management-to-be-deprecated-starting-december-11/).
 
 ## Best Practices
 

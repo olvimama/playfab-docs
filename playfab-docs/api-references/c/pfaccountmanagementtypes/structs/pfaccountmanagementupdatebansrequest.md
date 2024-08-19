@@ -4,8 +4,8 @@ title: "PFAccountManagementUpdateBansRequest"
 description: "PFAccountManagementUpdateBansRequest data model. For each ban, only updates the values that are set. Leave any value to null for no change. If a ban could not be found, the rest are still applied. Returns information about applied updates only."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 06/26/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFAccountManagementUpdateBansRequest  

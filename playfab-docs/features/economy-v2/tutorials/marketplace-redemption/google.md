@@ -5,7 +5,7 @@ description: Set up a PlayFab bundle that can be purchased from Google Play Stor
 ms.author: fprotti
 ms.date: 11/20/2023
 ms.topic: tutorial
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, integration, marketplace
 ms.localizationpriority: medium
 ---
@@ -19,6 +19,7 @@ This tutorial shows you how to successfully create a PlayFab bundle, add it to y
 1. A Title in PlayFab's [Game Manager](https://developer.playfab.com/).
 2. An existing integration between the selected Title and your desired marketplace.
 3. An app already created and available in [Google Play](https://play.google.com/console/developers).
+    1. Make sure your app has the [Google Play Android Developer API](https://console.cloud.google.com/apis/library/androidpublisher.googleapis.com) enabled.
 
 ## Step 1: Create a bundle
 
@@ -95,7 +96,7 @@ To ensure that when a player purchases a bundle from your app, it gets properly 
 1. Navigate to your bundle in edit mode.
 2. Scroll down to the **Marketplace Mapping** section.
 3. From the **Marketplace** dropdown, select your desired marketplace. (For this tutorial, it will be **GooglePlay**).
-4. For your Marketplace ID,** make sure to use the same as your **Product ID** in the Google Play Console. In this tutorial, we used **Warrior_bundle**.
+4. For your **Marketplace ID**, make sure to use the same as your **Product ID** in the Google Play Console. In this tutorial, we used **Warrior_bundle**.
 5. To finish, select the **+** at the right side of that row.
 
 ![Marketplace Mapping](../../media/google-redemption/marketplace-mapping.png)

@@ -50,10 +50,12 @@
     href: allocating-with-build-alias.md     
   - name: Archive and retrieve server logs
     href: archiving-and-retrieving-multiplayer-server-logs.md
-  - name: VM performance metrics (preview)
+  - name: VM performance metrics
     href: vm-metrics.md
   - name: Run custom script during VM creation (preview)
     href: vmstartupscript.md
+  - name: Manage secrets (preview)
+    href: manage-secrets.md
 - name: Debugging game servers
   items:
   - name: LocalMultiplayerAgent
@@ -94,8 +96,8 @@
     href: ea-billing.md
   - name: PlayFab services billing
     href: billing-for-thunderhead.md
-  - name: Detailed price sheet
-    href: multiplayer-servers-detailed-price-sheet.md
+  - name: Server comparison
+    href: server-comparison.md
   - name: Incident response commitment
     href: comm-sla.md
   - name: Monitor server capacity

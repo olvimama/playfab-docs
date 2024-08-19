@@ -5,7 +5,7 @@ description: Landing page for Game Manager.
 ms.author: cjwill
 ms.date: 01/30/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, config, game manager
 ms.localizationpriority: medium
 ---
@@ -35,6 +35,10 @@ Management of a Title is divided into four major views:
 - [Build](reference.md#build) - Foundational elements and tools to configure your game.
 - [Engage](reference.md#engage) - Facilitate connections with players.
 - [Analyze](reference.md#analyze) - Monitor and act on player behaviors.
+
+## Recommended browsers
+
+To ensure a more seamless experience while using Game Manager, we recommend using either **Google Chrome** or **Microsoft Edge**. These browsers are tested and optimized for compatibility with Game Manager features.
 
 ## Next steps
 

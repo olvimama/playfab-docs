@@ -4,8 +4,8 @@ title: "PFFriendsServerGetFriendsListAsync"
 description: "Retrieves the current friends for the user with PlayFabId, constrained to users who have PlayFab accounts. Friends from linked accounts (Facebook, Steam) are also included. You may optionally exclude some linked services' friends."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 09/25/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFFriendsServerGetFriendsListAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32. See also ServerAddFriendAsync, ServerGetPlayerProfileAsync, ServerRemoveFriendAsync, ServerSetFriendTagsAsync. When the asynchronous task is complete, call [PFFriendsServerGetFriendsListGetResultSize](pffriendsservergetfriendslistgetresultsize.md) and [PFFriendsServerGetFriendsListGetResult](pffriendsservergetfriendslistgetresult.md) to get the result.
+This API is available on Win32, Linux, and macOS. See also ServerAddFriendAsync, ServerGetPlayerProfileAsync, ServerRemoveFriendAsync, ServerSetFriendTagsAsync. When the asynchronous task is complete, call [PFFriendsServerGetFriendsListGetResultSize](pffriendsservergetfriendslistgetresultsize.md) and [PFFriendsServerGetFriendsListGetResult](pffriendsservergetfriendslistgetresult.md) to get the result.
   
 ## Requirements  
   

@@ -4,8 +4,8 @@ title: "PFInventoryRedeemNintendoEShopInventoryItemsAsync"
 description: "Redeem items."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 07/25/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFInventoryRedeemNintendoEShopInventoryItemsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Nintendo Switch. Redeem items from the Nintendo EShop. When the asynchronous task is complete, call [PFInventoryRedeemNintendoEShopInventoryItemsGetResultSize](pfinventoryredeemnintendoeshopinventoryitemsgetresultsize.md) and [PFInventoryRedeemNintendoEShopInventoryItemsGetResult](pfinventoryredeemnintendoeshopinventoryitemsgetresult.md) to get the result.
+This API is available on Win32, Nintendo Switch, Linux, and macOS. Redeem items from the Nintendo EShop. When the asynchronous task is complete, call [PFInventoryRedeemNintendoEShopInventoryItemsGetResultSize](pfinventoryredeemnintendoeshopinventoryitemsgetresultsize.md) and [PFInventoryRedeemNintendoEShopInventoryItemsGetResult](pfinventoryredeemnintendoeshopinventoryitemsgetresult.md) to get the result.
   
 ## Requirements  
   

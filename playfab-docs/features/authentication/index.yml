@@ -6,7 +6,7 @@ summary: Overviews, quickstarts, and tutorials that provide guidance on player l
 metadata:
   title: PlayFab Authentication Documentation
   description: Overview of PlayFab authentication support # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: playfab #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: azure-playfab
   ms.topic: landing-page
   author: joannaleecy
   ms.author: joanlee
@@ -55,9 +55,9 @@ landingContent:
           - text: Running an HTTP server for testing
             url: platform-specific-authentication/running-an-http-server-for-testing.md
 
-  - title: Azure Active Directory Authentication
+  - title: Authentication for PlayFab User Accounts
     linkLists:
       - linkListType: overview
         links:
-          - text: About Azure Active Directory Authentication for Playfab Game Manager
+          - text: Account Authentication for PlayFab Game Manager
             url: aad-authentication/index.md

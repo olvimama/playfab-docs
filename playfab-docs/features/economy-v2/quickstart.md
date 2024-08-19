@@ -5,7 +5,7 @@ description: Get started with the new Economy v2 features.
 ms.author: derekreese
 ms.date: 07/27/2023
 ms.topic: quickstart
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy
 ms.localizationpriority: medium
 ---
@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 [!INCLUDE [notice](../../includes/_economy-release.md)]
 
-After working through [Getting started for developers](../../personas/developer.md), you can:
+After becoming familiar with Game Manager, you can:
 
 1. Set up a v2 Catalog's permissions, settings, and items.
 1. Set up Receipt Validation

@@ -4,8 +4,8 @@ title: "PFAuthenticationServerLoginWithServerCustomIdAsync"
 description: "Securely login a game client from an external server backend using a custom identifier for that player. Server Custom ID and Client Custom ID are mutually exclusive and cannot be used to retrieve the same player account."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 09/25/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFAuthenticationServerLoginWithServerCustomIdAsync  
@@ -51,7 +51,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32. When the asynchronous task is complete, call [PFAuthenticationServerLoginWithServerCustomIdGetResult](pfauthenticationserverloginwithservercustomidgetresult.md) to get the result.
+This API is available on Win32, Linux, and macOS. When the asynchronous task is complete, call [PFAuthenticationServerLoginWithServerCustomIdGetResult](pfauthenticationserverloginwithservercustomidgetresult.md) to get the result.
   
 ## Requirements  
   

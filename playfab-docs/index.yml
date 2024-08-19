@@ -8,7 +8,7 @@ metadata:
   title: Azure PlayFab documentation
   description: PlayFab is a complete backend platform for live games. 
   services: service
-  ms.service: playfab #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: azure-playfab
   ms.topic: hub-page
   author: DanBehrendt
   ms.author: dabe
@@ -24,19 +24,13 @@ highlightedContent:
       url: what-is-playfab.md
     - title: Game Manager
       itemType: overview
-      url: gamemanager/index.md
-    - title: Using Business Intelligence in PlayFab
-      itemType: get-started
-      url: personas/bi.md            
+      url: gamemanager/index.md          
     - title: Roadmap
       itemType: whats-new
       url: roadmap/index.md  
     - title: Pricing
       itemType: overview
       url: features/pricing/pricing-overview.md
-    - title: Making your first API call
-      itemType: quickstart      
-      url: personas/developer.md 
 
 productDirectory:
   items:
@@ -54,6 +48,8 @@ productDirectory:
           text: Social  
         - url: features/multiplayer/networking/index.md
           text: Party (Multiplayer infrastructure and cross-network gameplay)
+        - url: features/throttling/what-is-throttling.md
+          text: Throttling
     - title: Engage
       imageSrc: ./media/index/engage.svg
       links:
@@ -110,9 +106,9 @@ additionalContent:
   sections:
     - title: PlayFab Community & Support
       items:
-        - title: Forums
-          summary: Community based product support. Use the forums to post questions, share answers, and discuss the PlayFab product experience.
-          url: https://community.playfab.com/
+        - title: Discord forums
+          summary: Community based product support. Use the Discord forums to post questions, share answers, and discuss the PlayFab product experience.
+          url: https://discord.com/invite/msftgamedev
         - title: Support
           summary: PlayFab support options.
           url: features/pricing/paidtechnicalsupport.md

@@ -5,7 +5,7 @@ description: Describes how to create a PlayFab account.
 ms.author: joanlee
 ms.date: 06/03/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, developer account, game manager, sdk, api
 ms.localizationpriority: medium
 ---
@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). If you already have a PlayFab account, you can skip this step.
 
-![PlayFab - Create your account](media/quickstart/playfab-create-account.png)
+![PlayFab - Create your account](media/quickstart/playfab-create-new-account.png)
 
 Once you have a PlayFab account, navigate to the PlayFab home page, [https://playfab.com](https://playfab.com), and sign in.
 
@@ -33,4 +33,4 @@ Before installing any SDK, select a game title to enter Game Manager. Take the t
 
 For a more detailed overview, visit the [Game Manager quickstart](quickstart.md).
 
-The PlayFab Game Manager allows you to do whatever you need to with your game title. Once you have a grasp on the aspects of the Game Manager, install the SDK so you can start using APIs. for more information on how to do install the SDK, see [Getting Started for Developers](../personas/developer.md).
+The PlayFab Game Manager allows you to do whatever you need to with your game title. Once you have a grasp on the aspects of the Game Manager, install the SDK so you can start using APIs. for more information on how to do install the SDK, see [SDKs overview](../sdks/sdk-overview.md).

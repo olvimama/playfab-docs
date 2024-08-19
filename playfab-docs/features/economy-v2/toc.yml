@@ -13,6 +13,10 @@ items:
     href: bundles.md
   - name: Stores
     href: stores.md
+  - name: Targeted offers
+    href: targeted-offers.md
+  - name: Segment actions
+    href: segment-actions.md
   - name: Subscriptions
     href: subscriptions.md
   - name: User Generated Content
@@ -27,3 +31,5 @@ items:
     href: limits.md
   - name: Tutorials
     href: tutorials/toc.yml
+  - name: Error Handling
+    href: error-handling/toc.yml

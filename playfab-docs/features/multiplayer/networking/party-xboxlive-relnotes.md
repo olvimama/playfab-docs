@@ -5,7 +5,7 @@ description: Release notes for PlayFab Party Xbox Live Helper
 ms.author: scmunro
 ms.date: 04/14/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, party, release notes, multiplayer, networking, xbox, xbl
 ms.localizationpriority: medium
 ---
@@ -19,6 +19,14 @@ The Xbox Live Helper library is available on [Nuget.org](https://www.nuget.org/p
 > 
 >For more information, please see our [forum post](https://community.playfab.com/articles/141546/playfab-party-ending-support-for-the-xdk-and-windo.html).
 
+
+## 1.2.15
+
+January 29, 2024
+
+This release of the Party Xbox Live Helper library includes the following changes:
+
+- Switched over to new internal build and release infrastructure. No functional changes.
 
 ## 1.2.14
 

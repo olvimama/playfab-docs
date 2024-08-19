@@ -4,8 +4,8 @@ title: "PFAccountManagementClientGetPlayFabIDsFromGooglePlayGamesPlayerIDsAsync"
 description: "Retrieves the unique PlayFab identifiers for the given set of Google Play Games identifiers. The Google Play Games identifiers are the IDs for the user accounts, available as 'playerId' in the Google Play Games Services - Players API calls."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 09/25/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFAccountManagementClientGetPlayFabIDsFromGooglePlayGamesPlayerIDsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32. When the asynchronous task is complete, call [PFAccountManagementClientGetPlayFabIDsFromGooglePlayGamesPlayerIDsGetResultSize](pfaccountmanagementclientgetplayfabidsfromgoogleplaygamesplayeridsgetresultsize.md) and [PFAccountManagementClientGetPlayFabIDsFromGooglePlayGamesPlayerIDsGetResult](pfaccountmanagementclientgetplayfabidsfromgoogleplaygamesplayeridsgetresult.md) to get the result.
+This API is available on Win32, Linux, Android, and macOS. When the asynchronous task is complete, call [PFAccountManagementClientGetPlayFabIDsFromGooglePlayGamesPlayerIDsGetResultSize](pfaccountmanagementclientgetplayfabidsfromgoogleplaygamesplayeridsgetresultsize.md) and [PFAccountManagementClientGetPlayFabIDsFromGooglePlayGamesPlayerIDsGetResult](pfaccountmanagementclientgetplayfabidsfromgoogleplaygamesplayeridsgetresult.md) to get the result.
   
 ## Requirements  
   

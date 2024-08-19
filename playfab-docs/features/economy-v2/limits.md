@@ -5,7 +5,7 @@ description: Document detailing the various limits surrounding Economy V2.
 ms.author: fprotti
 ms.date: 11/30/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, monetization, ugc
 ms.localizationpriority: medium
 ---
@@ -15,6 +15,12 @@ ms.localizationpriority: medium
 [!INCLUDE [notice](../../includes/_economy-release.md)]
 
 The purpose of this guide is to detail the limits that are enforced when creating, updating, and reading from your catalog of items and adding, updating, and removing them from player inventories. It now includes the most updated limits as per Economy (V2).
+
+- Limit (Player) refers to when the entity being targeted is a Player.
+- Limit (Title) refers to when the entity being targeted is a Title.
+
+> [!NOTE]
+> All APIs are counted separately from one another.
 
 ## Catalog Throttling
 
@@ -53,42 +59,47 @@ The purpose of this guide is to detail the limits that are enforced when creatin
 
 ## Inventory Throttling
 
+> [!NOTE]
+> - Inventory throttling will be calculated based on the target entity, individually for each API.
+> - For example, if a Player or a Title (game service, coudscript, etc.) calls an Inventory API to update the Player entity's inventory, the Limit (Player) throttling will be applied.
+> - [Group entity](../../features/entities/index.md#group) inventories are also supported, and Group Entities share the same throttling rate as Player entities. See also [Groups, guilds and clans](../../features/social/groups/index.md).
+
 ### Read
 
 | **API** | **Limit (Player)** | **Limit (Title)** |
 |---------|--------------------|-------------------|
-| **GetInventoryItems** | 1.67 rps (100 in 60 seconds) | 1000 rps (10000 in 10 seconds) |
-| **GetInventoryCollectionIds** | 1.67 rps (100 in 60 seconds) | 1000 rps (10000 in 10 seconds) |
+| **GetInventoryItems** | 1.67 rps (100 in 60 seconds) | - |
+| **GetInventoryCollectionIds** | 1.67 rps (100 in 60 seconds) | - |
 
 ### Read Transaction History
 
 | **API** | **Limit (Player)** | **Limit (Title)** |
 |---------|--------------------|-------------------|
-| **GetTransactionHistory** | 0.1 rps (30 in 300 seconds) | 10 rps (100 in 10 seconds) |
+| **GetTransactionHistory** | 0.1 rps (30 in 300 seconds) | - |
 
 ### Write
 
 | **API** | **Limit (Player)** | **Limit (Title)** |
 |---------|--------------------|-------------------|
-| **AddInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
-| **SubtractInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
-| **UpdateInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
-| **PurchaseInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
-| **TransferInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
-| **DeleteInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
-| **ExecuteInventoryOperations** | 0.16 rps (15 in 90 seconds) | 50 rps (500 in 10 seconds) |
-| **DeleteInventoryCollection** | - | 50 rps (500 in 10 seconds) |
+| **AddInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
+| **SubtractInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
+| **UpdateInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
+| **PurchaseInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
+| **TransferInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
+| **DeleteInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
+| **ExecuteInventoryOperations** | 0.66 rps (60 in 90 seconds) | - |
+| **DeleteInventoryCollection** | 0.16 rps (15 in 90 seconds) | - |
 
 ### Redeem
 
 | **API** | **Limit (Player)** | **Limit (Title)** |
 |---------|--------------------|-------------------|
-| **RedeemAppleAppStoreInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
-| **RedeemGooglePlayInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
-| **RedeemMicrosoftStoreInventorItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
-| **RedeemNintendoEShopInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
-| **RedeemPlayStationStoreInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
-| **RedeemSteamInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
+| **RedeemAppleAppStoreInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
+| **RedeemGooglePlayInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
+| **RedeemMicrosoftStoreInventorItems** | 0.66 rps (60 in 90 seconds) | - |
+| **RedeemNintendoEShopInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
+| **RedeemPlayStationStoreInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
+| **RedeemSteamInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
 
 ## API Limits
 
@@ -129,9 +140,11 @@ The following are the maximum number of items returned for the various APIs. You
 
 The following are the maximum count of items returned for the various APIs. You can use [continuation tokens](/gaming/playfab/features/economy-v2/catalog/search#continuation-tokens) to paginate through results that return greater than the limit.
 
-* `GetInventoryItems` - 50 Items per page
-* `GetInventoryCollectionIds` - 50 Items per page
-* `GetTransactionHistory` - 50 Items per page
+| **API** | **Limit with response compression** | **Limit without response compression** |
+|---------|--------------------|-------------------|
+| **GetInventoryItems** | 250 Items | 50 Items |
+| **GetInventoryCollectionIds** | 250 Items | 50 Items |
+| **GetTransactionHistory** | 250 Items | 50 Items |
 
 ### Inventory Default Page Size
 
@@ -201,7 +214,7 @@ For example: "1.65535.234".
 
 ### ItemReferences
 
-The ItemReferences field has a limit of **50 items**.
+The ItemReferences field has a limit of **250 items**.
 
 ## Catalog Config
 
@@ -237,14 +250,14 @@ The list of tags has a limit of **1024 tags**, each with a max length of **32 ch
 
 ### Batch Operations
 
-The max number of inventory operations to be executed is of **10 operations**.
+The max number of inventory operations to be executed is of **50 operations**.
 
-The max number of items to be modified is **250 items**.   
+The max number of items to be modified is **300 items**.   
 (for example, you can add up to five full bundles because 5*50 = 250 that matches the 250 limit)
 
 ### Inventory Collections
 
-The max collection size is **3500 items**.
+The max collection size is **10000 items**.
 
 The length limit for the collection list is **unlimited**.
 

@@ -4,8 +4,8 @@ title: "PFEventPipelineCreateTelemetryPipelineHandleWithKey"
 description: "Creates an event pipeline to upload Telemetry events using a Telemetry Key."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 05/24/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFEventPipelineCreateTelemetryPipelineHandleWithKey  

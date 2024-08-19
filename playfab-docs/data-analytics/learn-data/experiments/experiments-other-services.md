@@ -5,13 +5,13 @@ description: Gives details on how to integrate experiments with other PlayFab se
 ms.author: yegarci
 ms.date: 11/20/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, experiments
 ms.localizationpriority: medium
 ---
 
 # Integrating Experiments with other PlayFab services 
-Experiments is compatible with Player Profile, PlayStream events, CloudScript and Insights Explorer. For example, you can:
+The Experiments feature is compatible with Player Profile, PlayStream events, CloudScript and Insights Explorer. For example, you can:
 
 - **Make configuration changes using CloudScript:** Virtually any configuration-related game code variation can be enabled using a combination of CloudScript and Experiment's getTreatmentAssignment API.
 - **Make configuration changes using PlayStream events:** Use the [getTreatmentAssignment](/rest/api/playfab/experimentation/experimentation/get-treatment-assignment) API to trigger game configuration changes based on PlayStream events. 

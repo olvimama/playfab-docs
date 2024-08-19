@@ -4,8 +4,8 @@ title: "PFExperimentationGetTreatmentAssignmentAsync"
 description: "Gets the treatment assignments for a player for every running experiment in the title."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 06/20/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFExperimentationGetTreatmentAssignmentAsync  

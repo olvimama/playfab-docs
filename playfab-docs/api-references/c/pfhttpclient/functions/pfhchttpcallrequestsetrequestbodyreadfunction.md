@@ -4,8 +4,8 @@ title: "PFHCHttpCallRequestSetRequestBodyReadFunction"
 description: "Sets a custom callback function that will be used to read the request body when the HTTP call is performed. If a custom read callback is used, any request body data previously set by PFHCHttpCallRequestSetRequestBodyBytes or PFHCHttpCallRequestSetRequestBodyString is ignored making these API operations mutually exclusive."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 03/09/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFHCHttpCallRequestSetRequestBodyReadFunction  

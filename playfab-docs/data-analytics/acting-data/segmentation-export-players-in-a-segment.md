@@ -5,7 +5,7 @@ description: This is a tutorial document for customers to export players of a se
 ms.author: shtarwar
 ms.date: 04/29/2022
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, segments, segmentation, export player profile, export segments players
 ms.localizationpriority: medium
 ---
@@ -31,7 +31,7 @@ Send a POST request to GetSegmentExport API with the ExportId received in the ab
 > The API requires the ‘X-SecretKey’ header with the value being a Title Secret key. The ‘Content-Type’ header should be set to ‘application/json’ 
 
 ### Step 3
-Download the Index file from the IndexUrl. The Index file is a file in which each line is a URL from which a fragment of the player profiles in the Segment can be downloaded. Given below is an example of an Index file. There are 2 URLs (export fragments) in the Index file.
+Download the Index file from the IndexUrl. The Index file is a file in which each line is a URL from which a fragment of the player profiles in the Segment can be downloaded. Next you can find an example of an Index file. There are 2 URLs (export fragments) in the Index file.
 
 ![Index File.png](media/IndexFile.png)
 

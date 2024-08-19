@@ -5,7 +5,7 @@ description: Learn about tracing/logging in the SDKs for Azure PlayFab Party.
 ms.author: victorku
 ms.date: 10/26/2022
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, networking, party, sdk, sample
 ms.localizationpriority: medium
 ---
@@ -25,12 +25,12 @@ The type of logs and the way logging should be configured/captured depends on a 
 
 | Platform | Log format | Logging instruction guidance location |
 |------------|------------|------------|
-| Android | Plain text | See [`Logging` section of this `README.md` file](https://github.com/PlayFab/PlayFabPartyUnity#logging) and `Android` in a table under that section. |
-| iOS | Plain text | See [`Logging` section of this `README.md` file](https://github.com/PlayFab/PlayFabPartyUnity#logging) and `iOS` in a table under that section. |
-| MacOS | Plain text | See [`Logging` section of this `README.md` file](https://github.com/PlayFab/PlayFabPartyUnity#logging) and `macOS` in a table under that section. |
+| Android | Plain text | See [`Logging` section of this `README.md` file](https://github.com/PlayFab/PlayFabParty#logging) and `Android` in a table under that section. |
+| iOS | Plain text | See [`Logging` section of this `README.md` file](https://github.com/PlayFab/PlayFabParty#logging) and `iOS` in a table under that section. |
+| MacOS | Plain text | See [`Logging` section of this `README.md` file](https://github.com/PlayFab/PlayFabParty#logging) and `macOS` in a table under that section. |
+| Linux | Plain text | See [`Logging` section of this `README.md` file](https://github.com/PlayFab/PlayFabParty#logging) and `Linux` in a table under that section. |
 | Switch | Plain text | See `Logging` section of `README.md` file included in a NuGet package for this SDK. |
 | PlayStation 4 | Plain text | See `Logging` section of `README.md` file included in a NuGet package for this SDK. |
 | PlayStation 5 | Plain text | See `Logging` section of `README.md` file included in a NuGet package for this SDK. |
 | PC (GDK) and Xbox (GDK) | ETW trace | See [this `README.md` file](https://github.com/PlayFab/PlayFabParty/blob/master/TraceScripts/README.md). |
 | Windows 10, Windows 8.1 | ETW trace | See [this `README.md` file](https://github.com/PlayFab/PlayFabParty/blob/master/TraceScripts/README.md). |
-| Linux | Plain text | Coming soon. |

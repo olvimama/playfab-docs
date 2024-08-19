@@ -4,8 +4,8 @@ title: "PFGroupsUnblockEntityRequest"
 description: "PFGroupsUnblockEntityRequest data model. Unblocks a list of entities from joining a group. No data is returned in the case of success."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 05/24/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFGroupsUnblockEntityRequest  

@@ -4,8 +4,8 @@ title: "PFInventoryGetTransactionHistoryRequest"
 description: "PFInventoryGetTransactionHistoryRequest data model. Get transaction history for specified entity and collection."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 09/25/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFInventoryGetTransactionHistoryRequest  

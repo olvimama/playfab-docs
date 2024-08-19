@@ -4,8 +4,8 @@ title: "PFGroupsGroupWithRoles"
 description: "PFGroupsGroupWithRoles data model. Describes a group and the roles that it contains."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 05/24/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFGroupsGroupWithRoles  

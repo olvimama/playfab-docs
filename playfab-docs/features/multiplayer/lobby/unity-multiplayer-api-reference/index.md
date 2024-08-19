@@ -4,7 +4,7 @@ title: PlayFab Multiplayer Unity SDK
 description: PlayFab Multiplayer Unity SDK members
 ms.author: victorku
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/23/2021
 ---
 
@@ -22,7 +22,7 @@ ms.date: 11/23/2021
 | [LobbyError](./PlayFab.Multiplayer/LobbyError.md) |  |
 | [LobbyJoinConfiguration](./PlayFab.Multiplayer/LobbyJoinConfiguration.md) | The initial configuration data for the member creating and joining the lobby. |
 | [LobbyMemberUpdateSummary](./PlayFab.Multiplayer/LobbyMemberUpdateSummary.md) | A collection of hints about an update which has been successfully applied to the lobby on behalf of a member. |
-| [LobbySearchConfiguration](./PlayFab.Multiplayer/LobbySearchConfiguration.md) | The configuration structure used to specify how a !:FindLobbies operation should be performed. |
+| [LobbySearchConfiguration](./PlayFab.Multiplayer/LobbySearchConfiguration.md) | The configuration structure used to specify how a [FindLobbies](./PlayFab.Multiplayer/PlayFabMultiplayer/FindLobbies.md) operation should be performed. |
 | [LobbySearchFriendsFilter](./PlayFab.Multiplayer/LobbySearchFriendsFilter.md) | The filter structure used to limit lobby search results to only those lobbies owned by the player's friends. |
 | [LobbySearchResult](./PlayFab.Multiplayer/LobbySearchResult.md) | An entry in the collection of lobby search results received upon successful completion of a [`FindLobbies`](./PlayFab.Multiplayer/PlayFabMultiplayer/FindLobbies.md) operation. |
 | [MatchmakingMatchDetails](./PlayFab.Multiplayer/MatchmakingMatchDetails.md) |  |

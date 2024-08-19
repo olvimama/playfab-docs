@@ -5,7 +5,7 @@ description: This guide helps you make your first PlayFab API call in Linux C++.
 ms.author: joanlee
 ms.date: 04/16/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, c++, linux, cocos2d-x, unreal, lua sdk
 ms.localizationpriority: medium
 ---
@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Get started with the PlayFab Client library for C++. Follow steps to install the package and try out example code for a basic task.
 
-This quickstart helps you make your first PlayFab API call in the using the Client library for C++. Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+This quickstart helps you make your first PlayFab API call in the using the Client library for C++.
 
 This quickstart was written using Ubuntu 18.04 LTS.
 

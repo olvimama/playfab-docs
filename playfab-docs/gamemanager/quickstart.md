@@ -5,7 +5,7 @@ description: Learn how to create your PlayFab account and first define your firs
 ms.author: cjwill
 ms.date: 01/31/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, config, game manager
 ms.localizationpriority: medium
 ---
@@ -44,4 +44,3 @@ Many API calls require a TitleId, which is the string ID found beneath the title
 ## Next steps
 
 - [PlayFab User Roles](playfab-user-roles.md)
-- [Getting started for developers](../personas/developer.md)

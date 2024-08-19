@@ -4,8 +4,8 @@ title: "PFMultiplayerServerListQosServersForTitleAsync"
 description: "Lists quality of service servers for the title. By default, servers are only returned for regions where a Multiplayer Servers build has been deployed."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 06/20/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFMultiplayerServerListQosServersForTitleAsync  

@@ -4,8 +4,8 @@ title: "PFHCWebSocketSetMaxReceiveBufferSize"
 description: "Configures how large the WebSocket receive buffer is allowed to grow before passing messages to clients. If a single message exceeds the maximum buffer size, the message will be broken down and passed to clients via multiple calls to the PFHCWebSocketMessageFunction. The default value is 20kb."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 03/09/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFHCWebSocketSetMaxReceiveBufferSize  

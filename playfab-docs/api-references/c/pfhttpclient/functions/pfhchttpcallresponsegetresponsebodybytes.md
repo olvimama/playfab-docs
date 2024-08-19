@@ -4,8 +4,8 @@ title: "PFHCHttpCallResponseGetResponseBodyBytes"
 description: "Get the response body buffer of the HTTP call. This API operation will fail if a custom write callback was set on this call handle using PFHCHttpCallResponseSetResponseBodyWriteFunction."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 03/09/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFHCHttpCallResponseGetResponseBodyBytes  

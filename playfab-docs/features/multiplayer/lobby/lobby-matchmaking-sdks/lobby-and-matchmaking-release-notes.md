@@ -5,12 +5,73 @@ description: Release notes for PlayFab Multiplayer's C++ SDK
 ms.author: scmunro
 ms.date: 04/29/2022
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, release notes
 ms.localizationpriority: medium
 ---
 
 # PlayFab Multiplayer C++ SDK release notes
+
+## 1.7.6
+
+Aug 12, 2024
+
+### Bug fixes
+
+- Fixed an issue for GDK Xbox where some events would not be queued after suspending and resuming a title.
+- Fixed a crash for GDK Xbox after suspending and resuming a title.
+- Updated [PFMultiplayerCreateServerBackfillTicket](../playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmultiplayercreateserverbackfillticket.md) to automatically handle failures where a match member is already a member of too many tickets. In this situation, the SDK automatically cancels existing tickets for members of the backfill ticket and retry ticket creation.
+
+## 1.7.5
+
+July 17, 2024
+
+### Bug fixes
+
+- Fixed potential issue with PFMultiplayerUninitialize causing a crash when being used with custom memory hooks on Unix System.
+
+## 1.7.4
+
+June 17, 2024
+
+### Bug fixes
+
+- Fixed an issue where messages received by websockets on PlayStation&#174;4 and, PlayStation&#174;5 would not be parsed correctly by the SDK if they contained the `'\0'` character. Failure to parse these messages could lead to PubSub connectivity issues. This is a PlayStation&#174;4 and, PlayStation&#174;5 only release.
+
+“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+
+## 1.7.3
+
+April 23, 2024
+
+### Bug fixes
+
+- Resolved duplicate class error when Party and Multiplayer are used in the same app. This is an Android only release.
+
+## 1.7.2
+
+March 7, 2024
+
+### Bug fixes
+
+- Fixed an issue where the internal PubSub notification WebSocket was slow to detect and react to disconnects, which could lead to errors to create or join lobbies and matchmaking tickets.
+- Fixed an issue where failure of PubSub to establish connection with the SignalR service would not trigger a failed state change and would not allow subsequent Multiplayer API calls to subscribe to PubSub.
+- Improved internal diagnostics.
+
+## 1.7.1
+
+February 14, 2024
+
+### New Features
+
+- Added new APIs to enable PlayFab GameServer entities to join and interact with client-owned lobbies:
+  - [PFMultiplayerJoinLobbyAsServer](..\playfabmultiplayerreference-cpp\pflobby\functions\pfmultiplayerjoinlobbyasserver.md)
+  - [PFLobbyServerPostUpdateAsServer](..\playfabmultiplayerreference-cpp\pflobby\functions\pflobbyserverpostupdateasserver.md)
+  - [PFLobbyServerLeaveAsServer](..\playfabmultiplayerreference-cpp\pflobby\functions\pflobbyserverleaveasserver.md)
+  - [PFLobbyGetServer](..\playfabmultiplayerreference-cpp\pflobby\functions\pflobbygetserver.md)
+  - [PFLobbyGetServerPropertyKeys](..\playfabmultiplayerreference-cpp\pflobby\functions\pflobbygetserverpropertykeys.md)
+  - [PFLobbyGetServerProperty](..\playfabmultiplayerreference-cpp\pflobby\functions\pflobbygetserverproperty.md)
+  - [PFLobbyGetServerConnectionStatus](..\playfabmultiplayerreference-cpp\pflobby\functions\pflobbygetserverconnectionstatus.md)
 
 ## 1.6.5
 
@@ -58,7 +119,7 @@ July 14, 2023
 
 June 14, 2023
 
-- On PlayStation&#174;4 and, PlayStation&#174;5, PlayFab Multiplayer will clean up all resources associated with it and reinitialize if the title enters and remains in background mode for more than 10 minutes.
+- On PlayStation&#174;4 and, PlayStation&#174;5, PlayFab Multiplayer cleans up all resources associated with it and reinitialize if the title enters and remains in background mode for more than 10 minutes.
 
 “PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
@@ -137,7 +198,7 @@ October 25, 2022
 ### Bug fixes
 
 - Fixed a bug where unnecessary, short-lived threads would spawn.
-- On Windows, Xbox, and Android, fixed a bug where the library may attempt web requests before a previously recorded retry-after period had expired.
+- On Windows, Xbox, and Android, fixed a bug where the library may attempt web requests before a previously recorded retry-after period expires.
 - Improve the error message if a web server can’t be reached.
 
 ## 1.4.0
@@ -162,7 +223,7 @@ September 9, 2022
 
 ### New features
 
-- Implemented a new function, [PFLobbyGetMemberConnectionStatus](..\playfabmultiplayerreference-cpp\pflobby\functions\pflobbygetmemberconnectionstatus.md), which can be used to detect whether a user is connected to the PubSub notification service. When a user's connection status changes, you'll receive a [PFLobbyUpdatedStateChange](..\playfabmultiplayerreference-cpp\pflobby\structs\pflobbyupdatedstatechange.md) with a [PFLobbyMemberUpdateSummary](..\playfabmultiplayerreference-cpp\pflobby\structs\pflobbymemberupdatesummary.md) where the `connectionStatusUpdated` field is `true`.
+- Implemented a new function, [PFLobbyGetMemberConnectionStatus](..\playfabmultiplayerreference-cpp\pflobby\functions\pflobbygetmemberconnectionstatus.md), which can be used to detect whether a user is connected to the PubSub notification service. When a user's connection status changes, you receive a [PFLobbyUpdatedStateChange](..\playfabmultiplayerreference-cpp\pflobby\structs\pflobbyupdatedstatechange.md) with a [PFLobbyMemberUpdateSummary](..\playfabmultiplayerreference-cpp\pflobby\structs\pflobbymemberupdatesummary.md) where the `connectionStatusUpdated` field is `true`.
 - Updated the protocol used to exchange messages with the PubSub notification service from JSON to MessagePack, decreasing the message sizes. This change has no impact on the API surface.
 
 ### Bug fixes
@@ -175,7 +236,7 @@ August 17, 2022
 
 ### New features
 
-- The match details now report server details associated with the multiplayer server allocated when a match is found, if the matchmaking queue has been configured to allocate multiplayer servers. For more information, see [PFMatchmakingMatchDetails](..\playfabmultiplayerreference-cpp\pfmatchmaking\structs\pfmatchmakingmatchdetails.md).
+- The match details now report server details associated with the multiplayer server allocated when a match is found, if the matchmaking queue is configured to allocate multiplayer servers. For more information, see [PFMatchmakingMatchDetails](..\playfabmultiplayerreference-cpp\pfmatchmaking\structs\pfmatchmakingmatchdetails.md).
 - A new constant, `PFLobbyAmOwnerSearchKey`, is defined for the `lobby/amOwner` search key. For more information on using search keys, see [PFLobbySearchConfiguration](..\playfabmultiplayerreference-cpp\pflobby\structs\pflobbysearchconfiguration.md).
 
 ### Bug fixes
@@ -190,8 +251,8 @@ July 13, 2022
 ### Bug fixes
 
 - Fixed incorrect constant string values for PFLobbyMemberCountSearchKey and PFLobbyAmMemberSearchKey in the PFLobby.h header
-- Fixed a bug which could cause `PFMultiplayerUninitialize()` to block indefinitely if a websocket had previously closed unexpectedly
-- Fixed a bug which caused PubSub notifications to become unusable and Lobby/Matchmaking API operations to stall out indefinitely after an unexpected websocket disconnect
+- Fixed a bug, which could cause `PFMultiplayerUninitialize()` to block indefinitely if a websocket closes unexpectedly
+- Fixed a bug, which caused PubSub notifications to become unusable and Lobby/Matchmaking API operations to stall out indefinitely after an unexpected websocket disconnect
 
 ## 1.1.4
 
@@ -209,8 +270,8 @@ June 10, 2022
 ### New features
 
 - The SDK is now more responsive to unexpected disconnections (detected 2-3x faster than previously).
-- Unexpected Lobby disconnections will now result in automatic reconnect attempts - the disconnect is communicated to the client only after these reconnect attempts have failed.
-- GDK/Win32: Web service failure responses (429s, 503s, etc.) will now result in automatic retries - a failure is communicated to the client only after these retries have failed.
+- Unexpected Lobby disconnections will now result in automatic reconnect attempts - the disconnect is communicated to the client only after these reconnect attempts fail.
+- GDK/Win32: Web service failure responses (429, 503, etc.) will now result in automatic retries - a failure is communicated to the client only after these retries fail.
 
 ### Bug fixes
 
@@ -233,7 +294,7 @@ March 4, 2022
 
 ### API changes
 
-- PFMultiplayerGetErrorMessage's API signature has changed. Previously this function returned an `HRESULT` and used an output parameter to return the error message string. Now the function returns the string directly.
+- PFMultiplayerGetErrorMessage's API signature changed. Previously this function returned an `HRESULT` and used an output parameter to return the error message string. Now the function returns the string directly.
 
 ### New features
 

@@ -5,19 +5,22 @@ description: Provides an overview of the Webhook panel in Game Manager, and desc
 ms.author: cjwill
 ms.date: 03/07/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, analytics, metrics, webhooks, events
 ms.localizationpriority: medium
 ---
 
 # Webhooks
 
+> [!NOTE] 
+> We recommend using [Automation Rules](action-rules-quickstart.md) instead of Webhooks, as Automation Rules supports V2 actions and provides the same functionality as Webhooks.
+
 In complex systems, you may want to provide additional event handling on your custom server. To achieve this, PlayFab offers Webhooks.
 
 Whenever a new event is emitted, it can be forwarded to your server by making a POST request to your custom web endpoint. The event data is then passed as the JSON body of the request.
 
 > [!IMPORTANT]
-> Entity PlayStream Events do not currently support forwarding with Webhooks.
+> Entity PlayStream Events will not support forwarding with Webhooks.
 
 ## Accessing Webhooks
 

@@ -4,8 +4,8 @@ title: "PFMultiplayerServerListBuildSummariesV2Async"
 description: "Lists summarized details of all multiplayer server builds for a title. Accepts tokens for title and if game client access is enabled, allows game client to request list of builds with player entity token."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 06/20/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFMultiplayerServerListBuildSummariesV2Async  

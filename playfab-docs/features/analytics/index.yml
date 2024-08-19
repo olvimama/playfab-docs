@@ -6,7 +6,7 @@ summary: Documentation pertaining to PlayFab Analytics. Contains overviews of fe
 metadata:
   title: PlayFab Analytics documentation
   description: Hub page for the PlayFab Analytics documentation. Here you can find feature overviews, quickstart guides, and tutorials. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: playfab #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: azure-playfab
   ms.topic: landing-page
   author: natashaorie
   ms.author: norie
@@ -62,8 +62,6 @@ landingContent:
         links:
           - text: Generate custom PlayStream events
             url: metrics/playstream-events.md
-          - text: Set up an Amazon S3 bucket for events
-            url: metrics/configure-s3-bucket.md
 
   # Card
   - title: Reports

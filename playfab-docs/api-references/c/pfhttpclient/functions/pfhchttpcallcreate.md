@@ -4,8 +4,8 @@ title: "PFHCHttpCallCreate"
 description: "Creates an HTTP call handle."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 03/09/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFHCHttpCallCreate  

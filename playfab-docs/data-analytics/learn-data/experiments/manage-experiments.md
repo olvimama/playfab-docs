@@ -5,7 +5,7 @@ description: Demonstrates how to manage experiments.
 ms.author: yegarci
 ms.date: 11/20/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, experiments, experimentation
 ms.localizationpriority: medium
 ---
@@ -32,7 +32,7 @@ The Experiments page can also be used to **manage experiments** by selecting on 
     * Delete and Clone of a stopped/ completed experiment 
 
 Note: One can also **Clone** an existing experiment from the experiment's edit configuration page, which allows further edits
-- A scheduled and drafted experiment's fields are modifiable and vice-versa for a stopped/ completed experiment. Select on the ellipsis to make **Edit**. Although, for any experiment in running state, only Experiment description and duration modifications are possible
+- A scheduled and drafted experiment's fields are modifiable and vice-versa for a stopped/ completed experiment. Select on the ellipsis to make **Edit**. Although for any experiment in running state, only Experiment description and duration modifications are possible
 - A running experiment status turns **Completed**, once the duration of the experiment is reached or a user explicitly stops the experiment
 
 ![Screenshot of Manage an Experiment](media/tutorials/manage-experiments-page.PNG "Manage an Experiment")

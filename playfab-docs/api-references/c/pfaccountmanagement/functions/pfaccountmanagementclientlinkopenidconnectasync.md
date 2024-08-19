@@ -4,8 +4,8 @@ title: "PFAccountManagementClientLinkOpenIdConnectAsync"
 description: "Links an OpenID Connect account to a user's PlayFab account, based on an existing relationship between a title and an Open ID Connect provider and the OpenId Connect JWT from that provider."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 06/20/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFAccountManagementClientLinkOpenIdConnectAsync  

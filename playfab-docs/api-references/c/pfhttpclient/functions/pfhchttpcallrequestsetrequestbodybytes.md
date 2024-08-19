@@ -4,8 +4,8 @@ title: "PFHCHttpCallRequestSetRequestBodyBytes"
 description: "Set the request body bytes of the HTTP call. This API operation is mutually exclusive with PFHCHttpCallRequestSetRequestBodyReadFunction and will result in any custom read callbacks that were previously set on this call handle to be ignored."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 03/09/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFHCHttpCallRequestSetRequestBodyBytes  

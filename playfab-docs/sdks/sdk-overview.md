@@ -5,7 +5,7 @@ description: SDKs overview
 ms.author: joanlee
 ms.date: 01/12/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, playfab sdk, sdk
 ms.localizationpriority: medium
 ---
@@ -15,6 +15,9 @@ ms.localizationpriority: medium
 This topic describes the four different SDKs we have.
 
 These SDKs facilitate the use of PlayFab features and services in your title, on the platform of your choice. Each type of SDK is available in different flavors to support your title development on popular engines and platforms. They are typically wrappers around REST APIs.
+
+> [!TIP]
+> We strongly recommend that you use the latest versions of the SDKs. All SDK versions released in the past 6 months are fully supported unless specified otherwise. For Unreal Engine and Unity plugins, we generally support the latest 2 versions. With each release of the SDKs, we support compatibility with newest partner platform versions. Please reach out to developer support if you have any questions.
 
 ## PlayFab Services SDK
 
@@ -31,9 +34,6 @@ PlayFab Multiplayer Game Server SDKs (GSDKs) provide native C++, C#, and Java li
 ## PlayFab Lobby and Matchmaking SDK
 
 PlayFab Lobby and Matchmaking SDKs enable you to use lobby and matchmaking features. For more information, see [Lobby and Matchmaking SDKs](../features/multiplayer/lobby/lobby-matchmaking-sdks/lobby-matchmaking-sdks.md).
-
-> [!TIP]
-> We strongly recommend that you use the latest versions of the SDKs. All SDK versions released in the past 6 months are fully supported unless specified otherwise. For Unreal Engine and Unity plugins, we generally support the latest 2 versions. With each release of the SDKs, we support compatibility with newest partner platform versions. Please reach out to developer support if you have any questions.
 
 ## See also
 

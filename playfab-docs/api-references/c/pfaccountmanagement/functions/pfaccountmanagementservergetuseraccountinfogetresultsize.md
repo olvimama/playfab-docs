@@ -4,8 +4,8 @@ title: "PFAccountManagementServerGetUserAccountInfoGetResultSize"
 description: "Get the size in bytes needed to store the result of a ServerGetUserAccountInfo call."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 09/25/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFAccountManagementServerGetUserAccountInfoGetResultSize  

@@ -4,8 +4,8 @@ title: "PFAuthenticationReLoginWithCustomIDAsync"
 description: "Reauthenticates an existing PFEntityHandle. Used to address situations where the EntityToken expired and the PlayFab SDK is unable to refresh it."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 05/24/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFAuthenticationReLoginWithCustomIDAsync  

@@ -3,9 +3,9 @@ title: PlayFab Party Release Notes
 author: ScottMunroMS
 description: Release notes for PlayFab Party
 ms.author: scmunro
-ms.date: 04/14/2023
+ms.date: 01/29/2024
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, party, release notes, multiplayer, networking
 ms.localizationpriority: medium
 ---
@@ -21,6 +21,59 @@ PlayFab Party had a significant (up to 90%) price drop on October 13, 2020. You 
 
 > [!NOTE]
 > Support for 32-bit Android platforms (arm7 and x86) ended on October 19th, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
+
+## 1.10.0
+
+August 5, 2024
+
+- Added support for game_server entities, so servers can connect to Party networks via the SDK and be securely identified by game clients. After authenticating a `game_server` entity via AuthenticateGameServerWithCustomId, it can be added as a local user via [PartyManager::CreateLocalUserWithEntityType](reference/classes/PartyManager/methods/partymanager_createlocaluserwithentitytype.md).
+- Added methods for determining the entity type associated with each entity in the library. For more information, see [PartyLocalUser::GetEntityType](reference/classes/PartyLocalUser/methods/partylocaluser_getentitytype.md), [PartyEndpoint::GetEntityType](reference/classes/PartyEndpoint//methods/partyendpoint_getentitytype.md), and [PartyChatControl::GetEntityType](reference/classes/PartyChatControl/methods/partychatcontrol_getentitytype.md).
+- Added a direct peer connectivity option that enables direct peer connections between `title_player` and `game_server` entities while disallowing direct peer connections between `title_player` entities and other `title_player` entities. For more information, see [PartyDirectPeerConnectivityOptions::OnlyServers](reference/enums/partydirectpeerconnectivityoptions.md).
+- Added methods to retrieve a convenient list of endpoints based on filters. For more information, see [PartyNetwork::GetEndpointsByUserType](reference/classes/PartyNetwork/methods/partynetwork_getendpointsbyusertype.md).
+- Memory allocations by third party libraries used in PlayFab Party on PlayStation&#174;4 and, PlayStation&#174;5 that were using default allocators have been updated to use Party's memory callbacks. Titles using [PartyManager::SetMemoryCallbacks](reference/classes/PartyManager/methods/partymanager_setmemorycallbacks.md) to configure title-specific memory allocation functions allocations will now see and have control over these allocations.
+
+### Bug fixes
+
+- Fixed an issue where the library may crash on Windows or Xbox while the process is terminating.
+- Addressed spurious direct peer connection failures after a previous connection attempt failed in certain cases for non Windows platforms.
+- Fixed an issue where the DestroyNetwork event was not fired during repeated Party network creation and destroying.
+
+## 1.9.5
+
+May 3, 2024
+
+- Addressed intermittent fatal errors reported in [PartyRegionsChangedStateChange](reference/structs/partyregionschangedstatechange.md) and other operations by Windows devices using features such as connection sharing.
+- Fixed a potential crash on Windows and Xbox if process shuts down shortly after starting to use Party.
+- Fixed a bug where [`PartyChatControl`](reference/classes/PartyChatControl/partychatcontrol.md) resources would sometimes not be freed up after calling [PartyLocalDevice::DestroyChatControl](reference/classes/PartyLocalDevice/methods/partylocaldevice_destroychatcontrol.md) and would only be released after calling [PartyManager::Cleanup](reference/classes/PartyManager/methods/partymanager_cleanup.md).
+- Android: Resolved duplicate class error when Party and Multiplayer are used in the same app.
+
+## 1.9.4
+
+March 20, 2024
+
+- Fixed a bug where [`PartyLocalDevice::CreateChatControl`](reference/classes/PartyLocalDevice/methods/partylocaldevice_createchatcontrol.md) would fail on PlayStation&#174;4 and, PlayStation&#174;5 when Ukrainian is set as the console's language.
+
+“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+
+## 1.9.3
+
+March 14, 2024
+
+- Fixed a potential use-after-free bug when speech-to-text is enabled.
+- Fixed a potential crash when direct peer connections are enabled.
+- Improved internal diagnostics.
+
+## 1.9.2
+
+March 5, 2024
+
+- Patched audio render bug on Linux platform. Linux clients can now fully hear other platform clients.
+
+## 1.9.1
+
+February 5, 2024
+
+- Added [`PartyOption::RegionUpdateConfiguration`](reference/enums/partyoption.md) and [`PartyOption::RegionQualityMeasurementConfiguration`](reference/enums/partyoption.md) for advanced control over when and how the Party library performs automatic region discovery and connection quality measurements.
 
 ## 1.8.11
 

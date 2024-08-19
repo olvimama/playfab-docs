@@ -25,6 +25,8 @@ items:
       href: features/playerdata/toc.yml
     - name: Title Data
       href: features/titledata/toc.yml
+  - name: Throttling
+    href: features/throttling/toc.yml
 - name: Engage
   expanded: true
   items:
@@ -38,8 +40,6 @@ items:
     href: features/engagement/toc.yml
 - name: Data and analytics
   href: data-analytics/toc.yml
-- name: Personas
-  href: personas/toc.yml
 - name: Pricing
   href: features/pricing/toc.yml
 - name: Roadmap
@@ -62,6 +62,8 @@ items:
     href: sdks/toc.yml
 - name: Recipes and samples
   href: resources/toc.yml
+- name: Videos
+  href: video/toc.yml
 - name: Tools and utilities
   href: sdks/tools/index.yml
   items:

@@ -4,8 +4,8 @@ title: "PFAuthenticationLoginWithXUserGetResult"
 description: "Get the result from a PFAuthenticationLoginWithXUserAsync call. The PFEntityHandle will always be returned, but the additional info in the PFAuthenticationLoginResult is only returned if a buffer is provided."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 05/24/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFAuthenticationLoginWithXUserGetResult  

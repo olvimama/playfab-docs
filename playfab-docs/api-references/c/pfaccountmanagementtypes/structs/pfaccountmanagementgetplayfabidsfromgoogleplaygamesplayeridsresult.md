@@ -4,8 +4,8 @@ title: "PFAccountManagementGetPlayFabIDsFromGooglePlayGamesPlayerIDsResult"
 description: "PFAccountManagementGetPlayFabIDsFromGooglePlayGamesPlayerIDsResult data model. For Google Play Games identifiers which have not been linked to PlayFab accounts, null will be returned."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 06/26/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFAccountManagementGetPlayFabIDsFromGooglePlayGamesPlayerIDsResult  

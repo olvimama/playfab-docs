@@ -4,8 +4,8 @@ title: "PFTitleDataManagementClientGetTimeAsync"
 description: "Retrieves the current server time"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 06/20/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFTitleDataManagementClientGetTimeAsync  

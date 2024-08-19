@@ -4,8 +4,8 @@ title: "PFHCWebSocketSetBinaryMessageFragmentEventFunction"
 description: "Set the binary message fragment handler. The client functionContext passed to PFHCWebSocketCreate will also be passed to this handler."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 03/09/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFHCWebSocketSetBinaryMessageFragmentEventFunction  

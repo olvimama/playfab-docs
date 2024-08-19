@@ -4,8 +4,8 @@ title: "PFCatalogGetItemReviewsAsync"
 description: "Get a paginated set of reviews associated with the specified item. Individual ratings and reviews data update in near real time with delays within a few seconds."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 06/20/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFCatalogGetItemReviewsAsync  

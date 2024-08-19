@@ -4,8 +4,8 @@ title: "PFInt32DictionaryEntry"
 description: "Dictionary entry for an associative array with int32_t values."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 03/09/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFInt32DictionaryEntry  

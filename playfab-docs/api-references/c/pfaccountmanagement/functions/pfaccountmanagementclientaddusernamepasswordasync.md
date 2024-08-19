@@ -4,8 +4,8 @@ title: "PFAccountManagementClientAddUsernamePasswordAsync"
 description: "Adds playfab username/password auth to an existing account created via an anonymous auth method, e.g. automatic device ID login."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 09/25/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFAccountManagementClientAddUsernamePasswordAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32. See also ClientLoginWithEmailAddressAsync, ClientLoginWithPlayFabAsync. When the asynchronous task is complete, call [PFAccountManagementClientAddUsernamePasswordGetResultSize](pfaccountmanagementclientaddusernamepasswordgetresultsize.md) and [PFAccountManagementClientAddUsernamePasswordGetResult](pfaccountmanagementclientaddusernamepasswordgetresult.md) to get the result.
+This API is available on Win32, Linux, and macOS. See also ClientLoginWithEmailAddressAsync, ClientLoginWithPlayFabAsync. When the asynchronous task is complete, call [PFAccountManagementClientAddUsernamePasswordGetResultSize](pfaccountmanagementclientaddusernamepasswordgetresultsize.md) and [PFAccountManagementClientAddUsernamePasswordGetResult](pfaccountmanagementclientaddusernamepasswordgetresult.md) to get the result.
   
 ## Requirements  
   

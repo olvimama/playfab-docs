@@ -4,8 +4,8 @@ title: "PFInventoryGetInventoryCollectionIdsAsync"
 description: "Get Inventory Collection Ids. Up to 50 Ids can be returned at once. You can use continuation tokens to paginate through results that return greater than the limit. It can take a few seconds for new collection Ids to show up."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 06/20/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFInventoryGetInventoryCollectionIdsAsync  

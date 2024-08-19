@@ -12,6 +12,8 @@
     href: quickstart.md
   - name: Enable Party in Game Manager
     href: enable-party.md
+  - name: Linux quickstart
+    href: linux-specific-requirements.md
   - name: Android quickstart
     href: android-specific-requirements.md
   - name: iOS and macOS quickstart
@@ -36,6 +38,8 @@
       href: concepts-multiple-networks.md
     - name: Integrate Party with Lobby
       href: party-lobby-integration.md
+    - name: Request Party from your own services
+      href: party-tutorial-requestpartyservice.md
   - name: Regions and QoS
     items:
     - name: QoS

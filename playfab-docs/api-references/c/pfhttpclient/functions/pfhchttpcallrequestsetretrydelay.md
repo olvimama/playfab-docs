@@ -4,8 +4,8 @@ title: "PFHCHttpCallRequestSetRetryDelay"
 description: "Sets the HTTP retry delay in seconds. The default and minimum delay is 2 seconds."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 03/09/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFHCHttpCallRequestSetRetryDelay  

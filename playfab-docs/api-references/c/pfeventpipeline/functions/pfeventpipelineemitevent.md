@@ -4,8 +4,8 @@ title: "PFEventPipelineEmitEvent"
 description: "Adds a event to a pipelines buffer to be uploaded. The API will return synchronously and the event will be uploaded in the background based on the pipeline configuration."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 05/24/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFEventPipelineEmitEvent  

@@ -4,8 +4,8 @@ title: "PFAccountManagementClientGetPlayFabIDsFromTwitchIDsAsync"
 description: "Retrieves the unique PlayFab identifiers for the given set of Twitch identifiers. The Twitch identifiers are the IDs for the user accounts, available as '_id' from the Twitch API methods (ex: https://github.com/justintv/Twitch-API/blob/master/v3_resources/users.md#get-usersuser)."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 09/25/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFAccountManagementClientGetPlayFabIDsFromTwitchIDsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32. When the asynchronous task is complete, call [PFAccountManagementClientGetPlayFabIDsFromTwitchIDsGetResultSize](pfaccountmanagementclientgetplayfabidsfromtwitchidsgetresultsize.md) and [PFAccountManagementClientGetPlayFabIDsFromTwitchIDsGetResult](pfaccountmanagementclientgetplayfabidsfromtwitchidsgetresult.md) to get the result.
+This API is available on Win32, Linux, and macOS. When the asynchronous task is complete, call [PFAccountManagementClientGetPlayFabIDsFromTwitchIDsGetResultSize](pfaccountmanagementclientgetplayfabidsfromtwitchidsgetresultsize.md) and [PFAccountManagementClientGetPlayFabIDsFromTwitchIDsGetResult](pfaccountmanagementclientgetplayfabidsfromtwitchidsgetresult.md) to get the result.
   
 ## Requirements  
   

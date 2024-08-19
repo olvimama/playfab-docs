@@ -4,8 +4,8 @@ title: "PFAccountManagementClientGetPlayFabIDsFromPSNAccountIDsAsync"
 description: "Retrieves the unique PlayFab identifiers for the given set of PlayStation :tm: Network identifiers."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 09/25/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFAccountManagementClientGetPlayFabIDsFromPSNAccountIDsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32 and Sony PlayStation®. When the asynchronous task is complete, call [PFAccountManagementClientGetPlayFabIDsFromPSNAccountIDsGetResultSize](pfaccountmanagementclientgetplayfabidsfrompsnaccountidsgetresultsize.md) and [PFAccountManagementClientGetPlayFabIDsFromPSNAccountIDsGetResult](pfaccountmanagementclientgetplayfabidsfrompsnaccountidsgetresult.md) to get the result.
+This API is available on Win32, Sony PlayStation®, Linux, and macOS. When the asynchronous task is complete, call [PFAccountManagementClientGetPlayFabIDsFromPSNAccountIDsGetResultSize](pfaccountmanagementclientgetplayfabidsfrompsnaccountidsgetresultsize.md) and [PFAccountManagementClientGetPlayFabIDsFromPSNAccountIDsGetResult](pfaccountmanagementclientgetplayfabidsfrompsnaccountidsgetresult.md) to get the result.
   
 ## Requirements  
   

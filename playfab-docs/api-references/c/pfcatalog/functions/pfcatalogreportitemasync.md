@@ -4,8 +4,8 @@ title: "PFCatalogReportItemAsync"
 description: "Submit a report for an item, indicating in what way the item is inappropriate."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
-ms.date: 06/20/2023
+ms.service: azure-playfab
+ms.date: 02/22/2024
 ---
 
 # PFCatalogReportItemAsync  
